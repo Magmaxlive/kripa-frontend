@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #004539;
+  --color-button-bg:#0045391a;
+  --color-bg: #ffffff;
+  --color-muted-text: #14181fcc;
+}
+
+
+
+body {
+
+  font-family: var(--font-plus-jakarta), Arial, Helvetica, sans-serif;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+}
+
+
+.float-el {
+  position: absolute;
+  bottom: -200px;
+  left: var(--l);
+  width: 120px;
+  opacity: 0;
+  animation: floatUp var(--s) linear infinite;
+  animation-delay: var(--d);
+  filter: blur(1px);
+  pointer-events: none;
+}

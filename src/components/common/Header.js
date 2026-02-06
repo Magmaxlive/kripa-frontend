@@ -1,0 +1,87 @@
+'use client';
+import Image from "next/image";
+import { Links } from "@/data/Links";
+import Link from "next/link";
+import { Phone,Menu,X } from 'lucide-react';
+import ThemeToggle from "../themes/Theme-toggle";
+import { useState } from "react";
+
+
+export default function Header() {
+    const [drawerOpen,setDrawerOpen] = useState(false)
+
+    const toggleNavbar = () =>{
+        setDrawerOpen(!drawerOpen)
+    }
+  return (
+    <>
+        <nav className="sticky top-0 z-50 py-4 backdrop-blur-lg bg-white border-b border-white dark:bg-gray-950 dark:border-black">
+            <div className="container px-4 mx-auto relative text-sm max-w-[1440px]">
+                <div className="flex justify-between items-center text-base">
+                
+                        <div className="flex items-center flex-shrik-0">
+                            <Image src='/images/kripalogo.svg' width={80} height={100} alt="Kripa logo" />
+                        </div>
+                    
+                        <ul className="hidden lg:flex space-x-8 text-[var(--color-muted-text)] font-medium dark:text-gray-200">
+                            {Links.map((i,index)=>
+                                (
+                                <li key={index}><Link href={i.link}>{i.label}</Link></li> 
+                                )
+                            )}
+                        </ul>
+
+                        <div className="hidden lg:flex gap-6 items-center justify-center text-[#14181f] font-semibold dark:text-gray-200">
+                            {/* <div className="flex gap-2">
+                                <Phone />
+                                <h6>022 587 0762</h6>
+                            </div> */}
+
+                            <div className="bg-[#d5ad67] rounded-xl py-3 px-6 dark:text-[#14181f]">
+                                Book Consultation
+                            </div>
+                            <div>
+                                <ThemeToggle/>
+                            </div>
+                        </div>
+
+                        <div className="lg:hidden md:flex flex gap-4 justify-end">
+                            <div>
+                                <ThemeToggle/>
+                            </div>
+                            <button onClick={toggleNavbar} className="cursor-pointer text-[#14181f] dark:text-gray-200">
+                                {drawerOpen ? <X/>:<Menu/>}
+                            </button>
+                        </div> 
+                </div>
+            </div>
+
+            {drawerOpen &&
+                <div className="fixed right-0 p-8 dark:bg-gray-950 bg-white z-20 w-full flex flex-col justify-start  gap-4 lg:hidden">
+                    <ul className="flex flex-col text-[var(--color-muted-text) font-medium dark:text-gray-200 gap-3">
+                            {Links.map((i,index)=>
+                                (
+                                <li key={index}><Link href={i.link}>{i.label}</Link></li> 
+                                )
+                            )}
+                    </ul>
+                    <hr className="my-2"/>
+
+                    <div className="flex flex-col gap-6  justify-start text-[#14181f] font-semibold dark:text-gray-200">
+                            <div className="flex gap-2">
+                                <Phone />
+                                <h6>022 587 0762</h6>
+                            </div>
+
+                            <div className="bg-[#d5ad67] rounded-2xl py-3 px-6 dark:text-[#14181f]">
+                                Book Consultation
+                            </div>
+                            
+                    </div>
+                </div>
+            }
+        </nav>
+      
+    </>
+  )
+}
