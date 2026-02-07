@@ -29,10 +29,10 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${plusJakarta.variable} antialiased`}>
-        <ThemeProvider>
+        
             <Header/>
             {children}
-        </ThemeProvider>
+       
       </body>
     </html>
   );

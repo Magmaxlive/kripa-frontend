@@ -1,0 +1,58 @@
+export const Logos = [
+    {
+        name:'Souther cross',
+        image:'/images/southercrosslogo.webp'
+    },
+    {
+        name:'West Pac',
+        image:'/images/westpaclogo.webp'
+    },
+    {
+        name:'Unity',
+        image:'/images/unitylogo.webp'
+    },
+    {
+        name:'TSB',
+        image:'/images/tsblogo.webp'
+    },
+    {
+        name:'SBS',
+        image:'/images/sbslogo.webp'
+    },
+    {
+        name:'Prospa',
+        image:'/images/prospalogo.webp'
+    },
+    {
+        name:'Pepper',
+        image:'/images/pepperlogo.webp'
+    },
+    {
+        name:'Liberty',
+        image:'/images/libertylogo.webp'
+    },
+    {
+        name:'BNZ',
+        image:'/images/bnzlogo.webp'
+    },
+    {
+        name:'Bank Of China',
+        image:'/images/bank-of-chinalogo.webp'
+    },
+    {
+        name:'Avanti',
+        image:'/images/avantilogo.webp'
+    },
+    {
+        name:'ASB',
+        image:'/images/asblogo.webp'
+    },
+    {
+        name:'ASAP',
+        image:'/images/asaplogo.webp'
+    },
+    {
+        name:'ANZ',
+        image:'/images/anzlogo.webp'
+    },
+]

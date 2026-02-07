@@ -5,16 +5,39 @@
   --color-button-bg:#0045391a;
   --color-bg: #ffffff;
   --color-muted-text: #14181fcc;
+  --color-video-bg:#0000000f;
+  --color-secondary:#f8f6f2;
 }
 
+@keyframes floatCard {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-8px, -12px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 
 body {
 
   font-family: var(--font-plus-jakarta), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-@variant dark (&:where(.dark, .dark *));
+/* @variant dark (&:where(.dark, .dark *)); */
 
 
 @keyframes floatUp {

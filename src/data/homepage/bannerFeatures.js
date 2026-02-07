@@ -9,7 +9,7 @@ export const FeatureItems = [
         content:'Strong lender relationships for better deals'
     },
     {
-        content:'Personalized home loans, investments, construction & refinancing'
+        content:'Personalized home loans, investments & refinancing'
     },
     {
         content:'Full protection & peace of mind'
