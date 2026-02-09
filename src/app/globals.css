@@ -2,11 +2,14 @@
 
 :root {
   --color-primary: #004539;
+  --color-secondary: #ffffff;
+  --color-accent: #d5ad67;
+  --color-neutral: #f8f6f2;
+  --color-text: #14181f;
+  --color-muted:#14181fcc; 
   --color-button-bg:#0045391a;
-  --color-bg: #ffffff;
-  --color-muted-text: #14181fcc;
   --color-video-bg:#0000000f;
-  --color-secondary:#f8f6f2;
+
 }
 
 @keyframes floatCard {

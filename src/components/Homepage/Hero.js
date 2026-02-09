@@ -8,7 +8,7 @@ import VideoHero from "./HeroVideo";
 
 export default function Hero() {
   return (
-    <div className="relative w-full bg-white ">
+    <div className="relative w-full bg-[var(--color-secondary)] ">
 
         {/* gradient color */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,#00453914_0%,transparent_50%),radial-gradient(circle_at_80%_70%,#d5ad6714_0%,transparent_50%)]"></div>
@@ -54,7 +54,7 @@ export default function Hero() {
                     <div className="flex flex-col gap-8">
                         {/* main heading */}
 
-                        <h1 className="lg:text-[4.5rem] text-[3rem] tracking-tight font-extrabold leading-none uppercase text-black ">
+                        <h1 className="lg:text-[4.5rem] text-[3rem] tracking-tight font-extrabold leading-none uppercase text-[var(--color-text)] ">
                             WAKE UP <br/>
                             TO THE <span className="text-[var(--color-primary)]">KRIPA<br/>
                             ADVANTAGE</span> 
@@ -64,7 +64,7 @@ export default function Hero() {
 
                         <div className="flex gap-2">
                             {items.map((i,index)=>(
-                                <div key={index} className="flex gap-1 items-center text-xs lg:text-lg text-[var(--color-muted-text)] ">
+                                <div key={index} className="flex gap-1 items-center text-xs lg:text-lg text-[var(--color-muted)] ">
                                     {index > 0 &&
                                         <Dot size={30}/>
                                     }
@@ -79,7 +79,7 @@ export default function Hero() {
 
                         <div className="flex flex-col gap-2">
                             {FeatureItems.map((i,index)=>(
-                                <div key={index} className="flex gap-4 items-center text-sm lg:text-lg text-[var(--color-muted-text)]">
+                                <div key={index} className="flex gap-4 items-center text-sm lg:text-lg text-[var(--color-muted)]">
                                     
                                     <Check className="text-[var(--color-primary)]" />
                                      {i.content}

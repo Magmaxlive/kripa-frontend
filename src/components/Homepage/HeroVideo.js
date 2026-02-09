@@ -97,13 +97,13 @@ export default function VideoHero() {
           </div>
         )}
         <div className="absolute bottom-4 left-4  z-30 max-w-xs animate-[floatCard_6s_ease-in-out_infinite]" >
-            <div className="flex p-4 rounded-2xl gap-4 bg-[var(--color-bg)] border-[var(--color-primary)] border-1">
+            <div className="flex p-4 rounded-2xl gap-4 bg-[var(--color-secondary)] border-[var(--color-primary)] border-1">
                 <div className='bg-[var(--color-button-bg)] rounded-2xl h-fit p-4 text-[var(--color-primary)]'>
                     <ShieldCheck/>
                 </div>
                 <div className="flex flex-col gap-2">
                     <h6 className='text-[var(--color-primary)] text-lg font-semibold'>Trusted by Kiwis</h6>
-                    <p className='text-black text-xs'>
+                    <p className='text-[var(--color-text)] text-xs'>
                         Helping New Zealand families achieve their homeownership dreams since 2021.
                         </p>
                 </div>

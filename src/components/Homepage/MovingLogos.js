@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function MovingLogos() {
   return (
-    <div className="flex flex-col gap-6 py-10 px-8 w-full bg-white border-y-1 border-gray-300">
+    <div className="flex flex-col gap-6 py-10 px-8 w-full bg-[var(--color-secondary)] border-y-1 border-gray-300">
         <h2 className="uppercase text-sm text-center font-semibold tracking-wider text-[var(--color-muted-text)]">Working with New Zealand's leading lenders</h2>
 
         <div className="overflow-hidden w-full">
