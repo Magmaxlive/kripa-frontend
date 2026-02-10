@@ -33,7 +33,7 @@ export default function EstimateCalculator() {
         return emi;
     }
   return (
-    <div className="bg---color-secondary) text-(--color-text) rounded-xl p-6 border shadow-2xl border-gray-300 flex flex-col">
+    <div className="bg-(--color-secondary) text-(--color-text) rounded-xl p-6 border shadow-2xl border-gray-300 flex flex-col">
         <div className="flex gap-4 justify-start items-center">
             <div className='bg-(--color-button-bg) rounded-2xl h-fit w-fit p-4 text-(--color-primary)'>
                         <Calculator />

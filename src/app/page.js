@@ -1,4 +1,5 @@
 import FinancialToolsSection from "@/components/Homepage/FinancialToolsSection";
+import GetinTouchSection from "@/components/Homepage/GetinTouchSection";
 import Hero from "@/components/Homepage/Hero";
 import InsightSection from "@/components/Homepage/InsightSection";
 import MovingLogos from "@/components/Homepage/MovingLogos";
@@ -17,6 +18,7 @@ export default function Home() {
        <InsightSection/>
        <TestimonialSection/>
        <FinancialToolsSection/>
+       <GetinTouchSection/>
     </div>
   );
 }
