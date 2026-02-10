@@ -4,6 +4,7 @@ import SectionHeading from "../common/SectionHeading";
 import { FaStar } from "react-icons/fa";
 import { testimonials } from "@/data/homepage/Testimonial";
 import { useEffect, useState } from "react";
+import { accreditedMembers } from "@/data/homepage/Testimonial";
 
 
 
@@ -69,8 +70,8 @@ export default function TestimonialSection() {
   }, [transition]);
 
   return (
-    <div className="bg-[var(--color-primary)] py-20 px-8">
-      <div className="max-w-[1440px] mx-auto flex flex-col items-center gap-10">
+    <div className="bg-(--color-primary) py-20 px-8">
+      <div className="max-w-[1200px] mx-auto flex flex-col justify-center  gap-10">
 
         <SectionHeading
           minorHeading="Real Stories"
@@ -95,13 +96,13 @@ export default function TestimonialSection() {
             key={idx}
             className="min-w-full lg:min-w-[33.333%] px-2"
           >
-            <div className="flex flex-col gap-4 p-6 bg-[var(--color-secondary)] rounded-xl h-full">
+            <div className="flex flex-col gap-4 p-8 bg-(--color-secondary) rounded-xl h-full">
               <div className="flex gap-1">
                 {[...Array(i.rating)].map((_, r) => (
                   <FaStar
                     key={r}
                     size={18}
-                    className="text-[var(--color-accent)]"
+                    className="text-(--color-accent)"
                   />
                 ))}
               </div>
@@ -111,7 +112,7 @@ export default function TestimonialSection() {
               </p>
 
               <div className="flex gap-2 items-center">
-                <div className="bg-[var(--color-button-bg)] font-bold rounded-full px-4 py-2 text-[var(--color-primary)]">
+                <div className="bg-(--color-button-bg) font-bold rounded-full px-4 py-2 text-(--color-primary)">
                   {i.author[0]}
                 </div>
                 <h6 className="font-semibold">{i.author}</h6>
@@ -136,6 +137,18 @@ export default function TestimonialSection() {
         ))}
       </div>
       </div>
+
+      {/* accredited members */}
+
+        <div className="flex flex-col justify-center items-center py-8 gap-4">
+          <hr className="w-full text-gray-500 mb-2"  />
+          <h6 className="uppercase text-gray-300 font-semibold text-sm tracking-wider">accredited member</h6>
+          <div className="flex lg:flex-row flex-col gap-3 justify-center items-center">
+            {accreditedMembers.map((i,index)=>(
+              <h6 className="text-(--color-secondary) font-semibold text-sm tracking-wider" key={index}>{i.name}</h6>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

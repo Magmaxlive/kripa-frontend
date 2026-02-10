@@ -24,3 +24,13 @@ export const testimonials = [
     },
 
 ]
+
+
+export const accreditedMembers = [
+    {
+        name : 'Financial Advice NZ'
+    },
+    {
+        name : 'Kiwi Adviser Network'
+    }
+]

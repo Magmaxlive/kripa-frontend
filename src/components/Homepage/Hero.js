@@ -8,7 +8,7 @@ import VideoHero from "./HeroVideo";
 
 export default function Hero() {
   return (
-    <div className="relative w-full bg-[var(--color-secondary)] ">
+    <div className="relative w-full bg-(--color-secondary) ">
 
         {/* gradient color */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,#00453914_0%,transparent_50%),radial-gradient(circle_at_80%_70%,#d5ad6714_0%,transparent_50%)]"></div>
@@ -40,31 +40,31 @@ export default function Hero() {
 
 
         {/* hero content */}
-        <div className="relative z-10 max-w-[1440px] mx-auto flex flex-col gap-8">
+        <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col gap-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 py-16 lg:py-26 px-8 gap-8">
 
                 {/* left column */}
                 <div className="flex flex-col gap-6">
 
                     {/* badge */}
-                    <div className="flex  gap-3 text-[var(--color-primary)]  w-fit lg:px-4 lg:py-3 p-2 rounded-full font-medium bg-[var(--color-button-bg)] lg:text-lg text-sm">
+                    <div className="flex  gap-3 text-(--color-primary)  w-fit lg:px-4 lg:py-3 p-2 rounded-full font-medium bg-(--color-button-bg) lg:text-lg text-sm">
                         <ShieldCheck /> Your Trust is Our Priority
                     </div>
 
                     <div className="flex flex-col gap-8">
                         {/* main heading */}
 
-                        <h1 className="lg:text-[4.5rem] text-[3rem] tracking-tight font-extrabold leading-none uppercase text-[var(--color-text)] ">
+                        <h1 className="lg:text-[4.5rem] text-[3rem] tracking-tight font-extrabold leading-none uppercase text-(--color-text) ">
                             WAKE UP <br/>
-                            TO THE <span className="text-[var(--color-primary)]">KRIPA<br/>
+                            TO THE <span className="text-(--color-primary)">KRIPA<br/>
                             ADVANTAGE</span> 
                         </h1>
 
                         {/* short description */}
 
-                        <div className="flex gap-2">
+                        <div className="flex gap-1">
                             {items.map((i,index)=>(
-                                <div key={index} className="flex gap-1 items-center text-xs lg:text-lg text-[var(--color-muted)] ">
+                                <div key={index} className="flex gap-1 items-center text-xs lg:text-base text-(--color-muted) ">
                                     {index > 0 &&
                                         <Dot size={30}/>
                                     }
@@ -79,9 +79,9 @@ export default function Hero() {
 
                         <div className="flex flex-col gap-2">
                             {FeatureItems.map((i,index)=>(
-                                <div key={index} className="flex gap-4 items-center text-sm lg:text-lg text-[var(--color-muted)]">
+                                <div key={index} className="flex gap-4 items-center text-sm lg:text-lg text-(--color-muted)">
                                     
-                                    <Check className="text-[var(--color-primary)]" />
+                                    <Check className="text-(--color-primary)" />
                                      {i.content}
                                 </div>
                             ))}

@@ -1,3 +1,4 @@
+import FinancialToolsSection from "@/components/Homepage/FinancialToolsSection";
 import Hero from "@/components/Homepage/Hero";
 import InsightSection from "@/components/Homepage/InsightSection";
 import MovingLogos from "@/components/Homepage/MovingLogos";
@@ -15,6 +16,7 @@ export default function Home() {
        <WhyChooseUs/>
        <InsightSection/>
        <TestimonialSection/>
+       <FinancialToolsSection/>
     </div>
   );
 }

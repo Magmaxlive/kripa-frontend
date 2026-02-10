@@ -32,7 +32,7 @@ export default function VideoSection({ videoUrl }) {
   };
 
   return (
-    <section className="w-full bg-[var(--color-video-bg)] rounded-2xl flex justify-center">
+    <section className="w-full bg-(--color-video-bg) rounded-2xl flex justify-center">
       <div className="relative w-full min-h-[20vh] aspect-video overflow-hidden rounded-xl">
 
         {!ready && (
@@ -45,7 +45,7 @@ export default function VideoSection({ videoUrl }) {
           <div className="absolute inset-0 z-20 flex items-center justify-center">
             <button
               onClick={() => playerRef.current.playVideo()}
-              className="w-20 h-20 rounded-full bg-[var(--color-primary)] border-2 border-white flex items-center justify-center text-white text-3xl hover:scale-110 transition"
+              className="w-20 h-20 rounded-full bg-(--color-primary) border-2 border-white flex items-center justify-center text-white text-3xl hover:scale-110 transition"
             >
               ▶
             </button>

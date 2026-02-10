@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function WhyChooseUs() {
   return (
-    <div className="bg-[var(--color-secondary)] py-20 px-8">
-        <div className="flex flex-col gap-10 mx-auto justify-center items-center max-w-[1440px]">
+    <div className="bg-(--color-secondary) py-20 px-8">
+        <div className="flex flex-col gap-10 mx-auto  items-center max-w-[1200px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                 {/* left column */}
@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
                     />
 
                         {/* button */}
-                        <Link href="#" className="bg-[var(--color-primary)] text-[var(--color-secondary)] w-xs flex gap-2 justify-center items-center rounded-xl lg:py-3 lg:px-6 p-3 text-[#14181f] font-semibold">
+                        <Link href="#" className="bg-(--color-primary) text-(--color-secondary) w-xs flex gap-2 justify-center items-center rounded-xl lg:py-3 lg:px-6 p-3  font-semibold">
                             <Phone/>  Book a Chat
                         </Link>
 
@@ -36,8 +36,8 @@ export default function WhyChooseUs() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                             {whyChooseFeatures.map((i,index)=>(
-                                <div className="flex gap-2 justify-start items-center text-[var(--color-text)] text-sm" key={index}>
-                                    <CircleCheckBig className="text-[var(--color-primary)]" /> {i.content}
+                                <div className="flex gap-2 justify-start items-center text-(--color-text) text-sm" key={index}>
+                                    <CircleCheckBig className="text-(--color-primary)" /> {i.content}
                                 </div>
                             ))}
                             
@@ -50,8 +50,8 @@ export default function WhyChooseUs() {
                         <div className="grid grid-cols-3 md:place-items-center">
                             {CountData.map((i,index)=>(
                                 <div className="flex flex-col gap-2" key={index}>
-                                    <h1 className="text-[var(--color-primary)] lg:text-4xl text-3xl font-bold">{i.count}</h1>
-                                    <h6 className="text-[var(--color-muted)] font-medium text-sm lg:text-base">{i.description}</h6>
+                                    <h1 className="text---color-primary) lg:text-4xl text-3xl font-bold">{i.count}</h1>
+                                    <h6 className="text-(--color-muted) font-medium text-sm lg:text-base">{i.description}</h6>
                                 </div>
                             ))}
                             
@@ -63,15 +63,15 @@ export default function WhyChooseUs() {
                 {/* right column */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {cardData.map((i,index)=>(
-                        <div className="flex flex-col gap-4 bg-[var(--color-neutral)] rounded-xl p-6" key={index}>
-                            <div className='bg-[var(--color-button-bg)] rounded-3xl h-fit w-fit p-4 text-[var(--color-primary)]'>
+                        <div className="flex flex-col gap-4 bg-(--color-neutral) rounded-xl p-6" key={index}>
+                            <div className='bg-(--color-button-bg) rounded-3xl h-fit w-fit p-4 text-(--color-primary)'>
                                 {i.icon}
                             </div>
-                            <h3 className="text-lg font-semibold text-[var(--color-text)]">
+                            <h3 className="text-lg font-semibold text-(--color-text)">
                                 {i.title}
                             </h3>
 
-                            <p className="text-sm text-[var(--color-muted)] lg:max-w-[250px]">
+                            <p className="text-sm text-(--color-muted) lg:max-w-[250px]">
                                 {i.description}
                             </p>
                         </div>
