@@ -55,12 +55,12 @@ export default function EstimateCalculator() {
 
                     <div className="flex justify-between gap-2">
                         <div className="flex flex-col gap-2">
-                            <label htmlFor="interest" className='font-semibold'>Interest Rate ( % )</label>
+                            <label htmlFor="interest" className='font-semibold'>Interest Rate</label>
                             <input type="number" value={formData.rate} name='rate' onChange={onChangeHandler} id='interest' placeholder='Enter the Rate %' className='bg-(--color-neutral) placeholder:text-(--color-muted) placeholder:font-normal w-full border border-gray-200 rounded-md p-2 font-bold text-(--color-primary)' required/>
                         </div>
 
                         <div className="flex flex-col gap-2">
-                            <label htmlFor="term" className='font-semibold'>Loan Term ( years )</label>
+                            <label htmlFor="term" className='font-semibold'>Loan Term</label>
                             <input type="number" value={formData.year} name='year' onChange={onChangeHandler} id='interest' placeholder='Enter the Years' className='bg-(--color-neutral) placeholder:text-(--color-muted) placeholder:font-normal w-full border border-gray-200 rounded-md p-2 font-bold text-(--color-primary)' required />
                         </div>
                     </div>
