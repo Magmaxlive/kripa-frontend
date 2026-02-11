@@ -2,6 +2,8 @@ import { Geist, Geist_Mono,Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import { ThemeProvider } from "@/components/themes/Theme-provider";
+import Footer from "@/components/common/Footer";
+import ScrollToTop from "@/components/common/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +34,8 @@ export default function RootLayout({ children }) {
         
             <Header/>
             {children}
-       
+            <ScrollToTop/>
+            <Footer/>
       </body>
     </html>
   );
