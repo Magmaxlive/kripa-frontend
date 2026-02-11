@@ -34,10 +34,9 @@
 }
 
 
-body,html {
+body {
 
   font-family: var(--font-plus-jakarta), Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
 }
 
 /* @variant dark (&:where(.dark, .dark *)); */
