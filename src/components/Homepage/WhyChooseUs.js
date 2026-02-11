@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function WhyChooseUs() {
   return (
-    <div className="bg-(--color-secondary) py-20 px-8">
+    <div className="bg-(--color-secondary) py-20 px-8" id="why-us">
         <div className="flex flex-col gap-10 mx-auto  items-center max-w-[1200px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 

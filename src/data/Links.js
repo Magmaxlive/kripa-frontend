@@ -1,27 +1,33 @@
 
 export const Links = [
-    {
-        'label':'Home',
-        'link':'/'
-    },
+    // {
+    //     'label':'Home',
+    //     'link':'/'
+    // },
     {
         'label':'About Us',
-        'link':'/about-Us'
+        'link':'about-Us'
     },
     {
-        'label':'Refinance',
-        'link':'/refinance'
+        'label':'Services',
+        'link':'services'
     },
     {
-        'label':'Business Loans',
-        'link':'/business-Loans'
+        'label':'Why Choose us',
+        'link':'why-us'
     },
     {
-        'label':'Insurance',
-        'link':'/insurance'
+        'label':'Insights',
+        'link':'insights'
     },
+
+     {
+        'label':'Testimonials',
+        'link':'testimonials'
+    },
+
     {
         'label':'Contact',
-        'link':'/contact'
+        'link':'contact'
     },
 ];

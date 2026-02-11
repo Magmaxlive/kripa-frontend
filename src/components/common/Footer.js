@@ -1,6 +1,7 @@
+'use client';
 
 import { firstSectionData, serviceLinks,companyLinks,resourcesLinks } from "@/data/footer/footerData"
-import Link from "next/link"
+import { Link, Element } from "react-scroll";
 import Image from "next/image"
 
 export default function Footer() {

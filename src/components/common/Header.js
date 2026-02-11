@@ -1,9 +1,8 @@
 'use client';
 import Image from "next/image";
 import { Links } from "@/data/Links";
-import Link from "next/link";
+import { Link, Element } from "react-scroll";
 import { Phone,Menu,X } from 'lucide-react';
-import ThemeToggle from "../themes/Theme-toggle";
 import { useState } from "react";
 import BookingButton from "./BookingButton";
 
@@ -28,7 +27,7 @@ export default function Header() {
                         <ul className="hidden lg:flex space-x-8 text-(--color-muted) font-medium ">
                             {Links.map((i,index)=>
                                 (
-                                <li key={index}><Link href={i.link}>{i.label}</Link></li> 
+                                <li key={index}><Link to={i.link} smooth={true} duration={600} offset={-100} className="cursor-pointer">{i.label}</Link></li> 
                                 )
                             )}
                         </ul>
@@ -57,7 +56,7 @@ export default function Header() {
                     <ul className="flex flex-col text-(--color-muted) font-medium gap-3">
                             {Links.map((i,index)=>
                                 (
-                                <li key={index}><Link href={i.link}>{i.label}</Link></li> 
+                                <li key={index}><Link to={i.link} smooth={true} duration={600} offset={-100} className="cursor-pointer">{i.label}</Link></li> 
                                 )
                             )}
                     </ul>

@@ -7,7 +7,7 @@ export const services = [
         description : 'Dedicated advisers find the right mortgage for you.',
         buttonText : 'Book free consultation',
         buttonIcon : <MoveRight />,
-        link:"#"
+        link:"contact"
     },
     {
         icon : <ShieldCheck/>,
@@ -15,6 +15,6 @@ export const services = [
         description : 'Custom insurance and wealth-building that fits your life.',
         buttonText : 'Talk Today',
         buttonIcon : <MessageCircle />,
-        link:"#"
+        link:"contact"
     }
 ]

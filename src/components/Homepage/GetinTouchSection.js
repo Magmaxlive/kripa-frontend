@@ -4,7 +4,7 @@ import SectionHeading from "../common/SectionHeading";
 
 export default function GetinTouchSection() {
   return (
-    <div className="bg-(--color-secondary) py-20 px-8">
+    <div className="bg-(--color-secondary) py-20 px-8" id="contact">
         <div className="mx-auto max-w-[1200px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
                 <div className="flex flex-col gap-6">

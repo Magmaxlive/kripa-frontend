@@ -1,10 +1,11 @@
 import SectionHeading from "../common/SectionHeading";
 import { services } from "@/data/homepage/ServiceData";
 import Link from "next/link";
+import Buttons from "../common/Buttons";
 
 export default function ServiceSection() {
   return (
-    <div className="py-20 px-8 bg-(--color-neutral)">
+    <div className="py-20 px-8 bg-(--color-neutral)" id="services">
       <div className="flex flex-col gap-10 mx-auto  max-w-[1200px]">
         <SectionHeading 
             minorHeading="Our Services" 
@@ -28,9 +29,8 @@ export default function ServiceSection() {
                         {i.description}
                     </p>
 
-                    <Link href={i.link} className="mt-4 bg-(--color-primary) text-(--color-secondary) w-fit flex gap-2 justify-center items-center rounded-xl lg:py-3 lg:px-6 p-3  font-semibold">
-                          {i.buttonText}  {i.buttonIcon}
-                    </Link>
+
+                    <Buttons link={i.link} buttonText={i.buttonText} buttonIcon={i.buttonIcon}/>
                 </div>
             ))}
             
