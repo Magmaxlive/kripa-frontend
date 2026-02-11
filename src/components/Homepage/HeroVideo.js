@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from 'react';
 import Player from '@vimeo/player';
 import { ShieldCheck } from 'lucide-react';
+import { Play } from 'lucide-react';
+
 
 
 export default function VideoHero() {
@@ -62,7 +64,7 @@ export default function VideoHero() {
               className="w-20 h-20 rounded-full bg-[var(--color-primary)] border-2 border-white flex items-center justify-center text-white text-3xl hover:scale-110 transition"
               aria-label="Play video"
             >
-              ▶
+              <Play />
             </button>
           </div>
         )}

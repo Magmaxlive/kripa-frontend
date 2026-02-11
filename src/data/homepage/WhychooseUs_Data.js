@@ -25,7 +25,7 @@ export const whyChooseFeatures = [
 export const CountData = [
     {
         count : '4+',
-        description : 'Years Experience'
+        description : 'Years’ Experience'
     },
     {
         count : '30+',
@@ -42,7 +42,7 @@ export const cardData = [
     {
         icon : <Award/>,
         title : 'Award-Winning Service',
-        description : 'Recognized as 2024 Top Adviser by NZ Adviser and multiple Kiwi Adviser Network awards.'
+        description : 'Recognised as 2024 Top Adviser by NZ Adviser and multiple Kiwi Adviser Network awards.'
     },
 
     {
@@ -53,7 +53,7 @@ export const cardData = [
 
     {
         icon : <HeartHandshake/>,
-        title : 'Personalized Approach',
+        title : 'Personalised Approach',
         description : 'Every client is unique. We tailor solutions to fit your specific financial goals.'
     },
 

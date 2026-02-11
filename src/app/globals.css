@@ -34,7 +34,7 @@
 }
 
 
-body {
+body,html {
 
   font-family: var(--font-plus-jakarta), Arial, Helvetica, sans-serif;
   overflow-x: hidden;

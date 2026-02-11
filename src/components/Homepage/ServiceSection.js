@@ -9,7 +9,7 @@ export default function ServiceSection() {
         <SectionHeading 
             minorHeading="Our Services" 
             mainHeading="Financial Solutions Tailored for You" 
-            paragraph="From first homes to business empires, we provide comprehensive financial
+            paragraph="From first homes to business ventures, we provide comprehensive financial
             guidance every step of the way." 
             class="items-center justify-center text-center"
             

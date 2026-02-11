@@ -12,7 +12,7 @@ export const services = [
     {
         icon : <ShieldCheck/>,
         title : 'Protect & Grow Your Future',
-        description : 'Custom insurance + wealth building that fits your life.',
+        description : 'Custom insurance and wealth-building that fits your life.',
         buttonText : 'Talk Today',
         buttonIcon : <MessageCircle />,
         link:"#"

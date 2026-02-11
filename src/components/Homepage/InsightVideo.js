@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react';
 import YouTube from 'react-youtube';
+import { Play } from 'lucide-react';
 
 const getYouTubeId = (url) => {
   try {
@@ -47,7 +48,7 @@ export default function VideoSection({ videoUrl }) {
               onClick={() => playerRef.current.playVideo()}
               className="w-20 h-20 rounded-full bg-(--color-primary) border-2 border-white flex items-center justify-center text-white text-3xl hover:scale-110 transition"
             >
-              ▶
+              <Play />
             </button>
           </div>
         )}

@@ -7,7 +7,7 @@ export const testimonials = [
 
     {
         rating : 5,
-        testimonial : "Professional, responsive, and stress-free from start to finish. Simi and the team made everything smooth. Highly recommend!",
+        testimonial : "Professional, responsive and stress-free from start to finish. Simi and the team made everything smooth. Highly recommend!",
         author : 'Aradhana Bhadran & Family'
     },
 
