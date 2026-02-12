@@ -8,7 +8,7 @@ import VideoHero from "./HeroVideo";
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden w-full bg-(--color-secondary) " id="about-us">
+    <div className="relative overflow-hidden w-full bg-(--color-secondary) " id="about-Us">
 
         {/* gradient color */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,#00453914_0%,transparent_50%),radial-gradient(circle_at_80%_70%,#d5ad6714_0%,transparent_50%)]"></div>
