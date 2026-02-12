@@ -1,6 +1,7 @@
 import { ContactCard_description, ContactItems, socialMedia } from "@/data/homepage/GetinTouchData";
 import Link from "next/link";
-import { Phone, Mail, MapPin,Instagram,Facebook,Twitter } from "lucide-react";
+import { Phone, Mail, MapPin} from "lucide-react";
+import { FaWhatsapp,FaFacebookF,FaInstagram,FaLinkedin    } from "react-icons/fa";
 
 
 
@@ -11,12 +12,13 @@ const iconMap = {
   phone: Phone,
   email: Mail,
   location: MapPin,
+  whatsapp : FaWhatsapp
 };
 
 const socialIcons = {
-    instagram : Instagram,
-    facebook : Facebook,
-    twitter : Twitter
+    instagram : FaInstagram ,
+    facebook : FaFacebookF,
+    linkedin : FaLinkedin 
 }
 
 function getContactLink(title, content) {
@@ -25,6 +27,8 @@ function getContactLink(title, content) {
       return `tel:${content.replace(/\s+/g, '')}`;
     case 'email':
       return `mailto:${content}`;
+    case 'whatsapp':
+        return `https://wa.me/${content.replace(/\D+/g, '')}`;
     default:
       return null;
   }
@@ -66,7 +70,7 @@ function getContactLink(title, content) {
                     <h6 className="font-normal text-sm">{i.title}</h6>
 
                     {link ? (
-                        <a href={link} className="hover:underline font-medium">
+                        <a href={link} target="_blank" className="hover:underline font-medium">
                         {i.content}
                         </a>
                     ) : (

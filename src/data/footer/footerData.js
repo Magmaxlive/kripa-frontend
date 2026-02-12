@@ -5,27 +5,27 @@ export const firstSectionData = [
     }
 ]
 
-export const serviceLinks =[
-    {
-        name : 'Home',
-        link : '/'
-    },
+// export const serviceLinks =[
+//     {
+//         name : 'Home',
+//         link : '/'
+//     },
 
-    {
-        name : 'Refinancing',
-        link : '/refinancing'
-    },
+//     {
+//         name : 'Refinancing',
+//         link : '/refinancing'
+//     },
 
-    {
-        name : 'Business Funding',
-        link : '/business-funding'
-    },
+//     {
+//         name : 'Business Funding',
+//         link : '/business-funding'
+//     },
 
-    {
-        name : 'Insurance',
-        link : '/insurance'
-    },
-]
+//     {
+//         name : 'Insurance',
+//         link : '/insurance'
+//     },
+// ]
 
 export const companyLinks = [
  {
@@ -41,6 +41,11 @@ export const companyLinks = [
     {
         name : 'Blog',
         link : '/blog'
+    },
+
+    {
+        name : 'Services',
+        link : '/services'
     },
 
     {
@@ -71,3 +76,5 @@ export const resourcesLinks = [
         link : '/client-resources'
     },
 ]
+
+
