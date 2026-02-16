@@ -93,7 +93,7 @@ export const Mainteam = [
     },
 
     {
-        image : '/images/jos.webp',
+        image : '/images/Jos.webp',
         name : 'Jose Aldrin Rozario',
         position : 'Financial Adviser, Mortgage',
         description : <div>
