@@ -105,7 +105,7 @@ export default function page() {
             <div className="mx-auto flex flex-col gap-12 max-w-[1200px]">
                 <SectionHeading class="text-center" minorHeading="our Core Values" mainHeading="Why Choose Kripa" />
 
-                <div className="grid gird-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {coreValues.map((i,index)=>(
                         <div key={index} className="flex flex-col justify-center items-center gap-3 p-4 bg-(--color-button-bg) rounded-xl  transition-transform duration-300 hover:scale-105 cursor-pointer">
                             <IconBox icon={i.icon}/>
