@@ -71,7 +71,7 @@ export default function TestimonialSection() {
 
   return (
     <div className="bg-(--color-primary) py-20 px-8" id="testimonials">
-      <div className="max-w-[1200px] mx-auto flex flex-col justify-center  gap-10">
+      <div className="max-w-[1200px] mx-auto flex flex-col justify-center  gap-12">
 
         <SectionHeading
           minorHeading="Real Stories"

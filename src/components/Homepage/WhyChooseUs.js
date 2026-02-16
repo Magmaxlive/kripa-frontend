@@ -83,7 +83,7 @@ export default function WhyChooseUs() {
             <div className="flex flex-col">
                 <SectionHeading minorHeading="our achievements" class="text-center" />
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
                     {achievements.map((i,index)=>(
                         <div key={index}>
                             <Image src={i.image} alt={i.alt} height={200} width={150}/>

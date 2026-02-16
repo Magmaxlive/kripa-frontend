@@ -7,7 +7,7 @@ import { InsightData } from "@/data/homepage/InsightSectionData";
 export default function InsightSection() {
   return (
     <div className="bg-(--color-secondary) py-20 px-8" id="insights">
-        <div className="flex flex-col gap-10 mx-auto items-center max-w-[1200px]">
+        <div className="flex flex-col gap-12 mx-auto items-center max-w-[1200px]">
             <SectionHeading class="text-center" minorHeading="Expert Insights" mainHeading="Learn From Our Principal Adviser" paragraph="Watch Simi Sethu share valuable insights on homeownership and property investment in New Zealand." />
 
             <div className="flex gap-3">

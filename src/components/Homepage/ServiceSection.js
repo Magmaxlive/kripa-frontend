@@ -6,7 +6,7 @@ import Buttons from "../common/Buttons";
 export default function ServiceSection() {
   return (
     <div className="py-20 px-8 bg-(--color-neutral)" id="services">
-      <div className="flex flex-col gap-10 mx-auto  max-w-[1200px]">
+      <div className="flex flex-col gap-12 mx-auto  max-w-[1200px]">
         <SectionHeading 
             minorHeading="Our Services" 
             mainHeading="Financial Solutions Tailored for You" 
