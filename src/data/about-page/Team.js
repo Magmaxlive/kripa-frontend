@@ -76,6 +76,10 @@ export const Mainteam = [
         </div>
     },
 
+    
+]
+
+export const mortageAdvisors = [
     {
         image : '/images/Nimisha.webp',
         name : 'Nimisha Thomas',

@@ -6,7 +6,7 @@ import VideoHero from "@/components/Homepage/HeroVideo";
 import { coreValues } from "@/data/about-page/coreValues";
 import Image from "next/image";
 import { mission_visson } from "@/data/about-page/Misson";
-import { Mainteam,otherMembers } from "@/data/about-page/Team";
+import { Mainteam,mortageAdvisors,otherMembers } from "@/data/about-page/Team";
 import TeamCard from "@/components/common/TeamCard";
 import OtherTeam from "@/components/common/OtherTeam";
 
@@ -127,7 +127,7 @@ export default function page() {
 
         {/* team section */}
 
-        {/* mission */}
+       
 
         <div className="bg-(--color-neutral) px-8 py-20">
             <div className="mx-auto flex flex-col gap-12 max-w-[1200px]">
@@ -140,8 +140,19 @@ export default function page() {
                         advisory.Passionate about simplifying complexity and delivering personalized solutions."
                 class="justify-center items-center" />
                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                             {Mainteam.map((i,index)=>(
+                                <TeamCard data={i} key={index}/>
+                            ))}
+                            
+                </div>
+
+                <SectionHeading 
+                minorHeading="mortage advisers" 
+                class="justify-center items-center" />
+               
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            {mortageAdvisors.map((i,index)=>(
                                 <TeamCard data={i} key={index}/>
                             ))}
                             
