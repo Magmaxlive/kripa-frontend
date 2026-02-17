@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function ImageCard({image,title,description,bgColor,textSize,textTransform,textColor}) {
   return (
@@ -28,7 +29,9 @@ export default function ImageCard({image,title,description,bgColor,textSize,text
                     <p className="text-xs text-center">
                                     {description}
                     </p>
-                  }                      
+                  }  
+
+                          
     </div>
   )
 }
