@@ -14,7 +14,7 @@ import OtherTeam from "@/components/common/OtherTeam";
 export default function page() {
   return (
     <div className="flex flex-col">
-        <PageBanner title="about us" breadCrumbs={[
+        <PageBanner title="about us" bannerBg="/images/aboutpagebanner.jpg" breadCrumbs={[
             {
                 label: 'about us',href:"/about-us"
             },

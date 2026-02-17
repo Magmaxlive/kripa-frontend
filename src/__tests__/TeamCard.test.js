@@ -28,6 +28,14 @@ const mockData = {
 
 
 describe("TeamCard Component",() =>{
+
+    test("image test",() => {
+        render(<TeamCard data={mockData}/>);
+
+         const img = screen.getByRole("img");
+        expect(img).toHaveAttribute("src", "/images/test.webp");
+    });
+
     test("renders name and position",()=>{
         render(<TeamCard data={mockData}/>);
 
@@ -60,4 +68,7 @@ describe("TeamCard Component",() =>{
 
         expect(screen.queryByText("Paragraph Two")).not.toBeInTheDocument();
     });
+
+
+    
 })
