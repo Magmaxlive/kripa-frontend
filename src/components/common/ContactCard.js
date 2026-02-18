@@ -97,7 +97,7 @@ function getContactLink(title, content) {
                         </div>
                         );
                     })}
-                    </div>
+                </div>
             </div>
             
 

@@ -27,52 +27,47 @@ export const firstSectionData = [
 //     },
 // ]
 
-export const companyLinks = [
+export const Emails = [
  {
-        name : 'About Us',
-        link : '/about-us'
+        email:'simi@kripa.co.nz'
     },
 
     {
-        name : 'Our Team',
-        link : '/our-team'
+        email : 'sethu@kripa.co.nz'
     },
 
     {
-        name : 'Blog',
-        link : '/blog'
+        email : 'krishnapriya@kripa.co.nz'
     },
 
     {
-        name : 'Services',
-        link : '/services'
+        email : 'office@kripa.co.nz'
     },
 
     {
-        name : 'Contact',
-        link : '/contact'
+       email : 'support@kripa.co.nz'
     },
 ]
 
 
 export const resourcesLinks = [
  {
-        name : 'Mortage Calculator',
+        name : 'Disclosure Statement',
         link : '/mortage-calculator'
     },
 
     {
-        name : 'Borrowing Calculator',
+        name : 'Privacy Policy',
         link : '/borrowing-Calculator'
     },
 
     {
-        name : 'FAQs',
+        name : 'Important Information',
         link : '/faqs'
     },
 
     {
-        name : 'Client Resources',
+        name : 'Terms and Conditions',
         link : '/client-resources'
     },
 ]
