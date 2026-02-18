@@ -12,10 +12,10 @@ export const Links = [
         'label':'kiwi guide',
         'link':'/kiwi-guide'
     },
-    // {
-    //     'label':'Why Choose us',
-    //     'link':'why-us'
-    // },
+    {
+        'label':'services',
+        'link':'/services'
+    },
     // {
     //     'label':'Insights',
     //     'link':'insights'

@@ -1,7 +1,7 @@
 import IconCard from "@/components/common/IconCard"
 import ImageCard from "@/components/common/ImageCard"
 import PageBanner from "@/components/common/PageBanner"
-import PagraphSection from "@/components/common/ParagraphSection"
+import ParagraphSection from "@/components/common/ParagraphSection"
 import SectionHeading from "@/components/common/SectionHeading"
 import { commonMisconseptions, impDocuments, InsuranceFeatures, mortageSteps, whereToInvest, whyInvest, whyInvestInNewHomes } from "@/data/kiwiGuide/Data"
 
@@ -87,7 +87,7 @@ export default function page() {
             ))}
           </div>
 
-          <PagraphSection paragraph="We work closely with you to design insurance cover that is tailored to your specific life stage, family structure, income sources, and financial commitments, rather than offering generic one-size-fits-all policies."/>
+          <ParagraphSection paragraph="We work closely with you to design insurance cover that is tailored to your specific life stage, family structure, income sources, and financial commitments, rather than offering generic one-size-fits-all policies."/>
 
     {/* common Misconceptions */}
 

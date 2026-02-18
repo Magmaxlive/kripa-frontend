@@ -13,8 +13,15 @@ export const services = [
     },
 
     {
-        title : 'Lending Solutions',
+        title : 'Finance for your venture',
         image : '/images/lending_solutions.jpg',
+        link:'/lending-solutions',
+        description : 'Wide range of financing options to help you achieve your dreams with ease and confidence.'
+    },
+
+     {
+        title : 'Managing your finance',
+        image : '/images/finance-management.jpg',
         link:'/lending-solutions',
         description : 'Wide range of financing options to help you achieve your dreams with ease and confidence.'
     },

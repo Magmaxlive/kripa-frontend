@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import React from "react";
-import PagraphSection from "@/components/common/ParagraphSection";
+import ParagraphSection from "@/components/common/ParagraphSection";
 
 
 
@@ -18,7 +18,7 @@ const mockData = {
 
 describe("Section Heading Component",() =>{
     test("renders main minor and paragraph",()=>{
-        render(<PagraphSection  paragraph={mockData.paragraph}  paragraphColor={mockData.pcolor} class={mockData.class} /> );
+        render(<ParagraphSection  paragraph={mockData.paragraph}  paragraphColor={mockData.pcolor} class={mockData.class} /> );
 
         
         expect(screen.getByText('paragraph')).toBeInTheDocument();
