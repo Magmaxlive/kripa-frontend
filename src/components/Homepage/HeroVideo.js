@@ -75,7 +75,7 @@ export default function VideoHero() {
           className="w-full h-full"
           src="https://player.vimeo.com/video/1161513003?autoplay=0&controls=0&background=0&title=0&byline=0&portrait=0"
           allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
+          
         />
 
         {/* Custom Controls */}
