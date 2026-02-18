@@ -56,7 +56,7 @@ export default function Header() {
                     <ul className="flex flex-col text-(--color-muted) font-medium gap-3">
                             {Links.map((i,index)=>
                                 (
-                                <li key={index}><Link to={i.link} smooth={true} duration={600} offset={-100} className="cursor-pointer">{i.label}</Link></li> 
+                                <li key={index}><Link href={i.link} className="cursor-pointer">{i.label}</Link></li> 
                                 )
                             )}
                     </ul>
