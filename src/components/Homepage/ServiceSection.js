@@ -31,7 +31,7 @@ export default function ServiceSection() {
                     </p>
 
 
-                    <Buttons link={i.link} buttonText="explore more" buttonIcon="" />
+                    <Buttons link={i.link} buttonText="explore more" />
                 </div>
             ))}
             
