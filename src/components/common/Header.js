@@ -28,8 +28,8 @@ export default function Header() {
                 priority
                 width={80}
                 height={100}
-                alt="Kripa logo "
-                className="h-auto w-auto"
+                alt="Kripa logo"
+                
               />
             </div>
 
