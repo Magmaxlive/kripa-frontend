@@ -52,7 +52,7 @@ export default function page() {
             {/* second section */}
               <div className="bg-(--color-primary) py-20 px-8">
                 <div className="flex flex-col gap-12 mx-auto max-w-[1200px]">
-                  <div className="grid grid-cols-1 md:grid-cols-2  gap-3">
+                  <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
 
                     <SectionHeading minorHeading="we guide you" mainHeading={
                       <>

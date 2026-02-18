@@ -3,6 +3,7 @@ import { services } from "@/data/services/Data";
 import Link from "next/link";
 import Buttons from "../common/Buttons";
 import Image from "next/image";
+import { MoveRight } from "lucide-react";
 
 export default function ServiceSection() {
   return (
@@ -17,13 +18,13 @@ export default function ServiceSection() {
             
         />
 
-        <div className="grid grid-cols-1  md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10">
             {services.map((i,index)=>(
-                <div className="flex flex-col gap-4 bg-(--color-secondary) border border-gray-300 rounded-lg p-6 text-black" key={index}>
+                <div className="flex flex-col justify-between gap-4 bg-(--color-secondary) border border-gray-300 rounded-lg p-6 text-black" key={index}>
                       <div className="relative w-full" style={{ height: "240px" }}>
                           <Image src={i.image} alt={i.title} fill  className="object-cover object-[center_30%] rounded-md"/>
                       </div>
-                    <h3 className="font-semibold text-xl">
+                    <h3 className="font-semibold text-xl capitalize">
                         {i.title}
                     </h3>
                     <p className="text-sm text-gray-600">
@@ -31,7 +32,11 @@ export default function ServiceSection() {
                     </p>
 
 
-                    <Buttons link={i.link} buttonText="explore more" />
+                   
+                    <Link href={i.link} className="bg-(--color-primary) text-(--color-secondary) w-fit flex gap-2 justify-center items-center rounded-xl lg:py-3 lg:px-6 p-3 cursor-pointer capitalize font-semibold">
+                          Explore More  <MoveRight/> 
+                      </Link>
+                  
                 </div>
             ))}
             

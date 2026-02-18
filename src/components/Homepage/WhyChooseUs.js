@@ -86,7 +86,7 @@ export default function WhyChooseUs() {
                 <div className="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4">
                     {achievements.map((i,index)=>(
                         <div key={index}>
-                            <Image src={i.image} alt={i.alt} height={200} width={150}/>
+                            <Image src={i.image} alt={i.alt}  height={200} width={150} />
                         </div>
                     ))}
                 </div>

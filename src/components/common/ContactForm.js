@@ -36,30 +36,30 @@ export default function ContactForm() {
             <div className="flex gap-3">
                 <div className="flex flex-col w-full gap-2">
                     <label htmlFor="first_name" className="font-medium">First Name</label>
-                    <input type="text" name="first_name" className="border w-full rounded-2xl p-3 border-gray-300" placeholder="Enter Your first name"  required/>
+                    <input type="text" name="first_name" id="first_name" className="border w-full rounded-2xl p-3 border-gray-300" placeholder="Enter Your first name"  required/>
                 </div>
 
                 <div className="flex flex-col w-full gap-2">
                     <label htmlFor="last_name" className="font-medium">Last Name</label>
-                    <input type="text" name="last_name" placeholder="Enter Your Last name" className="border w-full rounded-2xl p-3 border-gray-300"  required/>
+                    <input type="text" name="last_name" id="last_name" placeholder="Enter Your Last name" className="border w-full rounded-2xl p-3 border-gray-300"  required/>
 
                 </div>
             </div>
 
             <div className="flex flex-col w-full gap-2">
                     <label htmlFor="email" className="font-medium">Email</label>
-                    <input type="email" name="email" placeholder="Enter Your Email" className="border w-full rounded-2xl p-3 border-gray-300"  required/>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" className="border w-full rounded-2xl p-3 border-gray-300"  required/>
             </div>
 
 
             <div className="flex flex-col w-full gap-2">
                     <label htmlFor="phone" className="font-medium">Phone</label>
-                    <input type="number" name="phone" placeholder="Enter Phone number" className="border w-full rounded-2xl p-3 border-gray-300"  required/>
+                    <input type="number" name="phone" id="phone" placeholder="Enter Phone number" className="border w-full rounded-2xl p-3 border-gray-300"  required/>
             </div>
 
             <div className="flex flex-col w-full gap-2">
                     <label htmlFor="services" className="font-medium">How can we help ?</label>
-                    <select  name="serivces" defaultValue="nill" className="border w-full rounded-2xl p-3 border-gray-300" required> 
+                    <select id="services"  name="serivces" defaultValue="nill" className="border w-full rounded-2xl p-3 border-gray-300" required> 
                         <option value="nill" disabled>Select a service</option>
 
                         {options.map((i,index)=>(
@@ -71,7 +71,7 @@ export default function ContactForm() {
 
              <div className="flex flex-col w-full gap-2">
                     <label htmlFor="message" className="font-medium">Message ( optional )</label>
-                    <textarea  name="message" placeholder="Enter Message" className="border h-30 w-full rounded-2xl p-3 border-gray-300" />
+                    <textarea id="message"  name="message" placeholder="Enter Message" className="border h-30 w-full rounded-2xl p-3 border-gray-300" />
             </div>
 
             

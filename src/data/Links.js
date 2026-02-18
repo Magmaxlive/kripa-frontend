@@ -8,26 +8,58 @@ export const Links = [
         'label':'About Us',
         'link':'/about-us'
     },
+    
     {
-        'label':'kiwi guide',
-        'link':'/kiwi-guide'
+        'label':'Refinance',
+        'link':'/mortage_refinance'
     },
     {
-        'label':'services',
-        'link':'/services'
+        'label':'Insurance',
+        'link':'/Insurance'
+    },
+
+
+    {
+        'label':'Lending Solutions',
+        'link':'/lending_solutions'
+    },
+
+    {
+        'label':'Contact',
+        'link':'/contact'
     },
     // {
-    //     'label':'Insights',
-    //     'link':'insights'
-    // },
+    //     'label':'services',
+    //     'link':'/services',
+    //     submenu: [
+    //     {
+    //         label: 'Mortage & Home Solutions',
+    //         link: '/services/mortage_and_home_solutions',
+    //     },
 
-    //  {
-    //     'label':'Testimonials',
-    //     'link':'testimonials'
-    // },
+    //     {
+    //         label: 'Insurance Solutions',
+    //         link: '/services/insurance_solutions',
+    //     },
 
-    // {
-    //     'label':'Contact',
-    //     'link':'contact'
+    //     {
+    //         label: 'lending solutions',
+    //         link: '/services/lending_solutions',
+    //     },
+    //     ]
     // },
+    // // {
+    // //     'label':'Insights',
+    // //     'link':'insights'
+    // // },
+
+    // //  {
+    // //     'label':'Testimonials',
+    // //     'link':'testimonials'
+    // // },
+
+    // // {
+    // //     'label':'Contact',
+    // //     'link':'contact'
+    // // },
 ];
