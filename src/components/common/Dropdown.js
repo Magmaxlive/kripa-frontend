@@ -7,7 +7,7 @@ export default function Dropdown({ submenus, dropdown }) {
   if (!dropdown) return null;
 
   return (
-    <ul className="absolute left-0 top-full flex flex-col space-y-6 bg-(--color-neutral) shadow-lg p-4 w-max min-w-[300px] z-[999]">
+    <ul className="absolute left-0 top-full flex flex-col space-y-2 bg-(--color-neutral) shadow-lg p-4 w-max min-w-[300px] z-[999]">
     {submenus.map((item, index) => (
       <li key={index}>
         <Link
