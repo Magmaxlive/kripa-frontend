@@ -5,6 +5,7 @@ import ScheduleCallButton from "@/components/common/ScheduleCallButton";
 import { products } from "@/data/insurance/products";
 import InsuranceProducts from "@/components/common/InsuranceProducts";
 import GetinTouchSection from "@/components/Homepage/GetinTouchSection";
+import SubPagesFirstSection from "@/components/common/SubPagesFirstSection";
 
 export default function page() {
   return (
@@ -16,30 +17,15 @@ export default function page() {
         ]}  />
 
          {/* first section - manage your loan */}
-                
-                      <div className="bg-(--color-secondary) py-20 px-8">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mx-auto max-w-[1200px]">
-                          <div className="flex flex-col justify-center items-center gap-6">
-                            <SectionHeading minorHeading="insurance for everyone" mainHeading="Insurance" paragraph={
+
+         <SubPagesFirstSection minorHeading="insurance for everyone" image='/images/insurance.jpg' mainHeading="Insurance" paragraph={
                                 <>
                                   <p>Looking for insurance for your family, health or your assets? </p>
                                   <p>Kripa can help.</p>
                                 </>
-                              }  />
-        
-                             <ScheduleCallButton/>
-                          </div>
-        
-                          <Image
-                              src="/images/insurance.jpg"
-                              width={800} // desired width
-                              height={500} // desired height
-                              alt="mortgage refinance"
-                              className="rounded-xl object-cover"
-                            />
-                                              
-                        </div>
-                      </div>
+                              } />
+                
+                      
 
 
                       {/* second section */}
