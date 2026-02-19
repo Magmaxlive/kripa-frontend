@@ -21,7 +21,17 @@ export const Links = [
 
     {
         'label':'Lending Solutions',
-        'link':'/lending_solutions'
+        
+        submenu: [
+            {
+                label : 'commercial loans',
+                link : '/commercial-loans'
+            },
+            {
+                label : 'business loans',
+                link : '/business-loans'
+            },
+        ]
     },
 
     {

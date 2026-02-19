@@ -28,13 +28,12 @@ export default function MenuItems({ item }) {
     >
       {item.submenu ? (
         <>
-          <Link
-            href={item.link}
+          <h1
             className="inline-flex items-center gap-1 cursor-pointer capitalize"
           >
             {item.label}
             <span className="text-xs">▾</span>
-          </Link>
+          </h1>
 
           <Dropdown submenus={item.submenu} dropdown={dropdown} />
         </>

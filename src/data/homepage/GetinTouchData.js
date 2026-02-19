@@ -43,7 +43,7 @@ export const ContactCard_description = [
 export const ContactItems = [
     {
         title:'Phone',
-        content:'022 587 0762',
+        content:'+64 22 523 2303',
 
     },
     {

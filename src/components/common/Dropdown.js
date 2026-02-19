@@ -7,12 +7,12 @@ export default function Dropdown({ submenus, dropdown }) {
   if (!dropdown) return null;
 
   return (
-    <ul className="absolute left-0 top-full flex flex-col space-y-6 bg-white shadow-lg p-2 w-max min-w-[300px] z-[999]">
+    <ul className="absolute left-0 top-full flex flex-col space-y-6 bg-(--color-neutral) shadow-lg p-4 w-max min-w-[300px] z-[999]">
     {submenus.map((item, index) => (
       <li key={index}>
         <Link
           href={item.link}
-          className="block px-4 py-3 text-sm capitalize hover:bg-gray-100 hover:text-(--color-primary) hover:underline underline-offset-4 whitespace-nowrap"
+          className="block px-4 py-3 text-base capitalize hover:bg-gray-100 hover:text-(--color-primary) hover:underline underline-offset-4 whitespace-nowrap"
         >
          {item.label}
         </Link>
