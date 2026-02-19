@@ -15,7 +15,7 @@ export const Links = [
     },
     {
         'label':'Insurance',
-        'link':'/Insurance'
+        'link':'/insurance'
     },
 
 

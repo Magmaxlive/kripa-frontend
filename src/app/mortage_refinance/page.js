@@ -6,6 +6,7 @@ import ParagraphSection from "@/components/common/ParagraphSection";
 import { refinance_blogs } from "@/data/refinance/blogs";
 import BlogSection from "@/components/common/BlogSection";
 import GetinTouchSection from "@/components/Homepage/GetinTouchSection";
+import ScheduleCallButton from "@/components/common/ScheduleCallButton";
 
 
 export default function page() {
@@ -30,7 +31,7 @@ export default function page() {
                         </>
                       }  />
 
-                      <BookingButton/>
+                      <ScheduleCallButton/>
                   </div>
 
                   <Image
