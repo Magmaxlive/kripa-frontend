@@ -33,7 +33,7 @@ export default function ContactForm() {
   return (
     <form action="" method="post" onSubmit={HandleSubmit}>
     <div className="flex flex-col gap-6">
-            <div className="flex gap-3">
+            <div className="flex lg:flex-row flex-col gap-6 lg:gap-3">
                 <div className="flex flex-col w-full gap-2">
                     <label htmlFor="first_name" className="font-medium">First Name</label>
                     <input type="text" name="first_name" id="first_name" className="border w-full rounded-2xl p-3 border-gray-300" placeholder="Enter Your first name"  required/>

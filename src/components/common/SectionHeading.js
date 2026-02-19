@@ -8,7 +8,7 @@ export default function SectionHeading(props) {
         }
 
         {props.paragraph &&
-              <div className={`text-base font-normal text-pretty max-w-4xl capitalize ${props.paragraphColor || 'text-(--color-text)'}`}>{props.paragraph}</div>
+              <div className={`text-base font-normal text-pretty max-w-4xl ${props.paragraphColor || 'text-(--color-text)'}`}>{props.paragraph}</div>
 
         }
     </div>
