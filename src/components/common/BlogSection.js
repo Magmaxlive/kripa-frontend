@@ -19,7 +19,7 @@ export default function BlogSection({image,title,excerpt,slug,id}) {
                             
                             
                                                 <button
-                                                className="text-(--color-primary) hover:underline underline-offset-4 mt-4 font-medium underline cursor-pointer"
+                                                className="text-(--color-primary) hover:underline underline-offset-4 mt-4 font-medium  cursor-pointer"
                                                 >
                                                 Read more
                                                 </button>
