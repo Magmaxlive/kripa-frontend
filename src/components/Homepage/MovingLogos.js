@@ -10,7 +10,7 @@ export default function MovingLogos() {
         <div className="overflow-hidden w-full">
             <div className="flex gap-20 w-max animate-[marquee_40s_linear_infinite]">
                     {Logos.map((i,index)=>(
-                        <Image src={i.image} width={150} height={150} alt={i.name} key={index} className="grayscale transition duration-300 hover:grayscale-0 hover:scale-110"/>
+                        <Image src={i.image} width={150} height={150} alt={i.name} key={index} className="object-fit grayscale transition duration-300 hover:grayscale-0 hover:scale-110"/>
                     ))}
             </div>
         </div>

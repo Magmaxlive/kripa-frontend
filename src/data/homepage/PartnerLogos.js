@@ -55,4 +55,21 @@ export const Logos = [
         name:'ANZ',
         image:'/images/anzlogo.webp'
     },
+    {
+        name:'AIA',
+        image:'/images/AIAlogo.png'
+    },
+    // {
+    //     name:'CHUBB',
+    //     image:'/images/CHUBBlogo.png'
+    // },
+    {
+        name:'Fidelity',
+        image:'/images/Fidelity.svg'
+    },
+
+    {
+        name:'PartnersLife',
+        image:'/images/PartnersLife.png'
+    },
 ]
