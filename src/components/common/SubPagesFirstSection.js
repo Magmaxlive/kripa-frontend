@@ -16,7 +16,7 @@ export default function SubPagesFirstSection({minorHeading,mainHeading,paragraph
             
                               <Image
                                   src={image}
-                                  width={800} // desired width
+                                  width={500} // desired width
                                   height={500} // desired height
                                   alt={minorHeading}
                                   className="rounded-xl object-cover"

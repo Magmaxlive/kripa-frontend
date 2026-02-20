@@ -1,4 +1,4 @@
-import { ContactCard_description, ContactItems, socialMedia } from "@/data/homepage/GetinTouchData";
+import { ContactCard_description, ContactItems, officeTime, socialMedia } from "@/data/homepage/GetinTouchData";
 import Link from "next/link";
 import { Phone, Mail, MapPin} from "lucide-react";
 import { FaWhatsapp,FaFacebookF,FaInstagram,FaLinkedin    } from "react-icons/fa";
@@ -80,6 +80,30 @@ function getContactLink(title, content) {
                 </div>
                 );
             })}
+            </div>
+
+
+            <div className="flex flex-col gap-3 mt-2">
+                
+                        <div className="flex flex-col gap-3">
+                            <h5 className="font-medium text-lg capitalize" >office time</h5>
+                            {officeTime.map((i,index)=>(
+                                <div className="flex gap-4" key={index}>
+                                    <p className="font-medium text-base capitalize">
+                                        {i.title} 
+                                    </p>
+
+                                    <p>:</p>
+
+                                    <p className="font-medium text-base capitalize">
+                                        {i.worktime}
+                                    </p>
+
+
+                                </div>
+                            ))}
+                        </div>
+
             </div>
 
             <div className="flex flex-col gap-4">

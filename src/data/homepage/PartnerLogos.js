@@ -59,10 +59,10 @@ export const Logos = [
         name:'AIA',
         image:'/images/AIAlogo.png'
     },
-    // {
-    //     name:'CHUBB',
-    //     image:'/images/CHUBBlogo.png'
-    // },
+    {
+        name:'CHUBB',
+        image:'/images/CHUBB_Logo.jpg'
+    },
     {
         name:'Fidelity',
         image:'/images/Fidelity.svg'

@@ -79,3 +79,21 @@ export const socialMedia = [
         link:'https://www.linkedin.com/company/kripa-financial-solutions-limited/'
     }
 ]
+
+
+export const officeTime = [
+    {
+        title : 'Mon - Fri',
+        worktime : '9:00 am - 5:00 pm'
+    },
+
+    {
+        title : 'Saturday',
+        worktime : 'Appointment Only'
+    },
+
+    {
+        title : 'sunday',
+        worktime : 'closed'
+    }
+]

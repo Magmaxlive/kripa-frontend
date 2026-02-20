@@ -9,7 +9,7 @@ import { Check,LoaderCircle   } from 'lucide-react';
 
 
 
-export default function ContactForm() {
+export default function ContactForm({text}) {
     const [success,setSucess] = useState(false)
     const [loading,setLoading] = useState(false)
 
@@ -81,7 +81,7 @@ export default function ContactForm() {
                 </button>
             ) : (
                 <button type="submit" className="bg-(--color-accent) w-full flex gap-2 justify-center items-center rounded-xl lg:py-3 lg:px-6 p-3 text-[#14181f] font-semibold">
-                            Book free Consultation
+                            {text ? text : "Book free Consultation"}
                             <MoveRight/>
                 </button>
             )}

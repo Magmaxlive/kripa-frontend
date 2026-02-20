@@ -35,8 +35,8 @@ export const Links = [
     },
 
     {
-        'label':'Contact',
-        'link':'/contact'
+        'label':'Contact us',
+        'link':'/contact-us'
     },
     // {
     //     'label':'services',
