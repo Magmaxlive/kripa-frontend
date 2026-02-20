@@ -35,6 +35,11 @@ export const Links = [
     },
 
     {
+        'label':'blogs',
+        'link':'/blogs'
+    },
+
+    {
         'label':'Contact us',
         'link':'/contact-us'
     },
