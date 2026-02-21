@@ -31,6 +31,8 @@ export default function ImageCard({image,title,description,bgColor,textSize,text
                     </p>
                   }  
 
+                  
+
                           
     </div>
   )

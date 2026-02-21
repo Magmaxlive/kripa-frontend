@@ -13,14 +13,18 @@ export default function SubPagesFirstSection({minorHeading,mainHeading,paragraph
             
                                  <ScheduleCallButton/>
                               </div>
-            
-                              <Image
+
+                              {image &&
+                                <Image
                                   src={image}
                                   width={500} // desired width
                                   height={500} // desired height
                                   alt={minorHeading}
                                   className="rounded-xl object-cover"
                                 />
+                              }
+            
+                              
                                                   
                             </div>
                           </div>

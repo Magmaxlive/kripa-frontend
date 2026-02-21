@@ -31,6 +31,10 @@ export const Links = [
                 label : 'business loans',
                 link : '/business-loans'
             },
+            {
+                label : 'trade loans',
+                link : '/trade-loans'
+            },
         ]
     },
 
